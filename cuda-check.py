@@ -4,6 +4,7 @@
 # $ conda activate ./cudaenv
 # $ conda install numba
 # $ conda install cudatoolkit
+# $ conda install pytorch
 # $ python p.py
 # /home/ubuntu/app/t/p.py:12: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
 #  @jit(target_backend='cuda')
@@ -46,3 +47,7 @@ if __name__=="__main__":
         func2(a)
         print("with GPU:", timer()-start)
 
+
+print("Torch version:",torch.__version__)
+
+print("Is CUDA enabled?",torch.cuda.is_available())

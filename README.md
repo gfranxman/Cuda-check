@@ -15,10 +15,14 @@ We're using conda here.
     $ conda activate ./cudaenv
     $ python ./cuda-check.py
 
-It should be around a 10x improvement with the GPU
+It should be around a 10x improvement with the GPU.
 
 
-# for torch test I used
+
+
+
+
+## for torch test I used
     $ conda create -p ./cudaenv
     $ conda init
     $ conda activate ./cudaenv
